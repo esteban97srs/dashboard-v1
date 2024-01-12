@@ -6,10 +6,9 @@ import Card from '../components/Card';
 import theme from '../styles/theme';
 import Button from '@mui/material/Button';
 import TabGroup from '../components/TabGroup';
-import ChartClientToday from '../components/ChartClientToday';
+import ClientToday from '../components/charts/ClientToday';
 import MuiDataGrid from '../components/grid/MuiDataGrid';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
-
 
 const Home: NextPage = () => {
 
@@ -39,7 +38,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div style={{marginTop:-65}}>
-              <ChartClientToday />
+              <ClientToday />
             </div>
             <div className='d-flex j-center' style={{marginTop:-26}}>
               <MuiDataGrid/>
@@ -54,7 +53,7 @@ const Home: NextPage = () => {
         </div>
       </ThemeProvider>
     </QueryClientProvider>
-  )
+  );
 };
 
 export default Home;

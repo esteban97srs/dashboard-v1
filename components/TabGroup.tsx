@@ -2,7 +2,8 @@ import * as React from 'react';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import InsertInvitationIcon from '@mui/icons-material/InsertInvitation';
-function TabGroup() {
+
+const TabGroup = () => {
   return (
     <Stack direction="row" spacing={'10px'}>
       <Chip sx={{background:'#E7DFF8'}} label="HOY" onClick={()=>{}} />
@@ -18,6 +19,6 @@ function TabGroup() {
       </div>
     </Stack>
   );
-}
+};
 
 export default TabGroup;

@@ -24,7 +24,7 @@ const rows = [
   createData('Column 1', 'Column 2', 'Column 3', 'Total'),
 ];
 
-function MuiDataGrid() {
+const MuiDataGrid = () => {
   return (
     <TableContainer component={Paper} sx={{ maxWidth: 510, background:'#E6E1E6'}}>
       <Table>
@@ -51,6 +51,6 @@ function MuiDataGrid() {
       </Table>
     </TableContainer>
   );
-}
+};
 
 export default MuiDataGrid;

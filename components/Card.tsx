@@ -72,8 +72,10 @@ const card = (
   </CardContent>
 );
 
-export default function Card() {
+const Card = () => {
   return (
     <CustomCard className='d-flex f-direction custom-card'>{card}</CustomCard>
   );
-}
+};
+
+export default Card;

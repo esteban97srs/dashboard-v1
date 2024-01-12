@@ -5,7 +5,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import ToggleButton from '@mui/material/ToggleButton';
 import { Typography } from '@mui/material';
 
-function ChartClientToday() {
+const ClientToday = () => {
 
   interface SaleData {
     newClient: {
@@ -30,12 +30,12 @@ function ChartClientToday() {
   };
 
   const Tableau10 = [
-    {label: 'Clientes totales', color :'#EB3535'},
+    {label: 'Clientes totales', color :'#F5BFC2'},
     {label: 'Clientes nuevos', color :'#EB7635'},
     {label: 'Compraron', color :'#358DEB'},
-    {label: 'No compraron', color :'#2DCF5A'}
+    {label: 'No compraron', color :'#B9E8C9'}
   ];
-  const { data, isLoading } : SalesArray = useQuery('data', fetchSalesData);
+  const { isLoading, error, data } : SalesArray = useQuery('data', fetchSalesData);
   const [ color ] = useState('');
 
   return (
@@ -69,8 +69,8 @@ function ChartClientToday() {
               <ToggleButton key={value?.color} value={value?.color} sx={{gap:'5px', border:'none', pointerEvents:'none' }}>
                 <div
                   style={{
-                    width: 10,
-                    height: 10,
+                    width: 15,
+                    height: 16,
                     backgroundColor: value?.color,
                   }}
                 />
@@ -82,6 +82,6 @@ function ChartClientToday() {
       }
     </>
   );
-}
+};
 
-export default ChartClientToday;
+export default ClientToday;

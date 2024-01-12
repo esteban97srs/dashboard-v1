@@ -17,10 +17,10 @@ const fetchUserData = async () => {
   return response.json();
 };
 
-function Navbar() {
+const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
-  const { data, isLoading, error } = useQuery('user', fetchUserData);
+  const { isLoading, error, data } = useQuery('user', fetchUserData);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -152,5 +152,5 @@ function Navbar() {
       </Container>
     </AppBar>
   );
-}
+};
 export default Navbar;
