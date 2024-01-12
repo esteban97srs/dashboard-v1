@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-function createData(
+function createData (
   column1: string,
   column2: string,
   column3: string,
@@ -22,15 +22,14 @@ const rows = [
   createData('Column 1', 'Column 2', 'Column 3', 'Total'),
   createData('Column 1', 'Column 2', 'Column 3', 'Total'),
   createData('Column 1', 'Column 2', 'Column 3', 'Total'),
-
 ];
 
-export default function MuiDataGrid() {
+function MuiDataGrid() {
   return (
     <TableContainer component={Paper} sx={{ maxWidth: 510, background:'#E6E1E6'}}>
       <Table>
-        <TableHead className='d-flex j-center'>
-          <TableRow className='d-flex j-center'>
+        <TableHead>
+          <TableRow>
             <TableCell>Clientes</TableCell>
           </TableRow>
         </TableHead>
@@ -53,3 +52,5 @@ export default function MuiDataGrid() {
     </TableContainer>
   );
 }
+
+export default MuiDataGrid;

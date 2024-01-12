@@ -1,0 +1,242 @@
+[
+  {
+    "newClient": {
+      "hour": "00:00",
+      "value": 20
+    },
+    "bought": {
+      "hour": "00:00",
+      "value": 10
+    }
+  },
+  {
+    "newClient": {
+      "hour": "01:00",
+      "value": 8
+    },
+    "bought": {
+      "hour": "01:00",
+      "value": 20
+    }
+  },
+  {
+    "newClient": {
+      "hour": "02:00",
+      "value": 80
+    },
+    "bought": {
+      "hour": "02:00",
+      "value": 80
+    }
+  },
+  {
+    "newClient": {
+      "hour": "03:00",
+      "value": 20
+    },
+    "bought": {
+      "hour": "03:00",
+      "value": 80
+    }
+  },
+  {
+    "newClient": {
+      "hour": "04:00",
+      "value": 10
+    },
+    "bought": {
+      "hour": "04:00",
+      "value": 10
+    }
+  },
+  {
+    "newClient": {
+      "hour": "05:00",
+      "value": 40
+    },
+    "bought": {
+      "hour": "05:00",
+      "value": 100
+    }
+  },
+  {
+    "newClient": {
+      "hour": "06:00",
+      "value": 60
+    },
+    "bought": {
+      "hour": "06:00",
+      "value": 20
+    }
+  },
+  {
+    "newClient": {
+      "hour": "07:00",
+      "value": 20
+    },
+    "bought": {
+      "hour": "07:00",
+      "value": 60
+    }
+  },
+  {
+    "newClient": {
+      "hour": "08:00",
+      "value": 40
+    },
+    "bought": {
+      "hour": "08:00",
+      "value": 80
+    }
+  },
+  {
+    "newClient": {
+      "hour": "09:00",
+      "value": 20
+    },
+    "bought": {
+      "hour": "09:00",
+      "value": 100
+    }
+  },
+  {
+    "newClient": {
+      "hour": "10:00",
+      "value": 20
+    },
+    "bought": {
+      "hour": "10:00",
+      "value": 80
+    }
+  },
+  {
+    "newClient": {
+      "hour": "11:00",
+      "value": 10
+    },
+    "bought": {
+      "hour": "11:00",
+      "value": 70
+    }
+  },
+  {
+    "newClient": {
+      "hour": "12:00",
+      "value": 20
+    },
+    "bought": {
+      "hour": "12:00",
+      "value": 20
+    }
+  },
+  {
+    "newClient": {
+      "hour": "13:00",
+      "value": 1
+    },
+    "bought": {
+      "hour": "13:00",
+      "value": 50
+    }
+  },
+  {
+    "newClient": {
+      "hour": "14:00",
+      "value": 8
+    },
+    "bought": {
+      "hour": "14:00",
+      "value": 70
+    }
+  },
+  {
+    "newClient": {
+      "hour": "15:00",
+      "value": 10
+    },
+    "bought": {
+      "hour": "15:00",
+      "value": 90
+    }
+  },
+  {
+    "newClient": {
+      "hour": "16:00",
+      "value": 30
+    },
+    "bought": {
+      "hour": "16:00",
+      "value": 70
+    }
+  },
+  {
+    "newClient": {
+      "hour": "17:00",
+      "value": 1
+    },
+    "bought": {
+      "hour": "17:00",
+      "value": 10
+    }
+  },
+  {
+    "newClient": {
+      "hour": "18:00",
+      "value": 20
+    },
+    "bought": {
+      "hour": "18:00",
+      "value": 40
+    }
+  },
+  {
+    "newClient": {
+      "hour": "19:00",
+      "value": 5
+    },
+    "bought": {
+      "hour": "19:00",
+      "value": 20
+    }
+  },
+  {
+    "newClient": {
+      "hour": "20:00",
+      "value": 10
+    },
+    "bought": {
+      "hour": "20:00",
+      "value": 60
+    }
+  },
+  {
+    "newClient": {
+      "hour": "21:00",
+      "value": 1
+    },
+    "bought": {
+      "hour": "21:00",
+      "value": 10
+    }
+  },
+  {
+    "newClient": {
+      "hour": "22:00",
+      "value": 20
+    },
+    "bought": {
+      "hour": "22:00",
+      "value": 40
+    }
+  },
+  {
+    "newClient": {
+      "hour": "23:00",
+      "value": 1
+    },
+    "bought": {
+      "hour": "23:00",
+      "value": 100
+    }
+  }
+]

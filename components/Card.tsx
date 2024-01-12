@@ -2,10 +2,9 @@ import * as React from 'react';
 import CustomCard from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { Button } from '@mui/material';
 
 const card = (
-  <CardContent className='d-flex f-direction custom-card'>
+  <CardContent>
     <Typography className='f-size2 j-center'>
       Noviembre
     </Typography>
@@ -75,6 +74,6 @@ const card = (
 
 export default function Card() {
   return (
-    <CustomCard>{card}</CustomCard>
+    <CustomCard className='d-flex f-direction custom-card'>{card}</CustomCard>
   );
 }

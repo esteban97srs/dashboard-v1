@@ -20,7 +20,7 @@ const fetchUserData = async () => {
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
-  const { data, isLoading, error } = useQuery('data', fetchUserData);
+  const { data, isLoading, error } = useQuery('user', fetchUserData);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -39,7 +39,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static" color="secondary">
+    <AppBar color="secondary">
       <Container>
         <Toolbar>
           {/* Phone responsive */}
@@ -83,7 +83,6 @@ function Navbar() {
           {/* Web responsive */}
           <Box sx={{ display: { xs: 'none', md: 'flex', lg: 'flex' }, marginLeft: 33 }}>
             <Grid container spacing={1}>
-
               <Grid item lg={'auto'}>
                 <Button
                   variant="contained"
@@ -126,7 +125,7 @@ function Navbar() {
               </IconButton>
             </Tooltip>
             <Menu
-              sx={{ mt: '45px' }}
+              sx={{ mt: '35px' }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
@@ -143,7 +142,7 @@ function Navbar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  {setting === "Cerrar sesión" ? <LogoutIcon /> : null}
+                  {setting === 'Cerrar sesión' ? <LogoutIcon /> : null}
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
