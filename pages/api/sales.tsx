@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import salesData from './data/SalesArray.json';
+import salesData from './data/salesArray.json';
 
 export default async function handler (
   req: NextApiRequest,
