@@ -73,6 +73,7 @@ const card = (
 );
 
 const Card = () => {
+
   return (
     <CustomCard className='d-flex f-direction custom-card'>{card}</CustomCard>
   );

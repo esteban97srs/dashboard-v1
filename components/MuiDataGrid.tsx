@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -7,24 +6,25 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-function createData (
-  column1: string,
-  column2: string,
-  column3: string,
-  column4: string,
-) {
-  return { column1, column2, column3, column4 };
-}
-
-const rows = [
-  createData('Column 1', 'Column 2', 'Column 3', 'Total'),
-  createData('Column 1', 'Column 2', 'Column 3', 'Total'),
-  createData('Column 1', 'Column 2', 'Column 3', 'Total'),
-  createData('Column 1', 'Column 2', 'Column 3', 'Total'),
-  createData('Column 1', 'Column 2', 'Column 3', 'Total'),
-];
-
 const MuiDataGrid = () => {
+
+  function createData (
+    column1: string,
+    column2: string,
+    column3: string,
+    column4: string,
+  ) {
+    return { column1, column2, column3, column4 };
+  }
+
+  const rows = [
+    createData('Column 1', 'Column 2', 'Column 3', 'Total'),
+    createData('Column 1', 'Column 2', 'Column 3', 'Total'),
+    createData('Column 1', 'Column 2', 'Column 3', 'Total'),
+    createData('Column 1', 'Column 2', 'Column 3', 'Total'),
+    createData('Column 1', 'Column 2', 'Column 3', 'Total'),
+  ];
+
   return (
     <TableContainer component={Paper} sx={{ maxWidth: 510, background:'#E6E1E6'}}>
       <Table>

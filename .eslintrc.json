@@ -6,7 +6,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "next/core-web-vitals"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -21,6 +22,8 @@
     "semi": ["warn", "always"],
     "quotes": ["warn", "single"],
     "react/react-in-jsx-scope": "off",
-    "indent": ["warn", 2]
+    "indent": ["warn", 2],
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   }
 }

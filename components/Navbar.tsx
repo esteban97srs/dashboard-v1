@@ -6,20 +6,20 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useQuery } from 'react-query';
 
-const pages = ['Dashboard', 'Clientes', 'Reglas de acumulación'];
-const settings = ['Editar perfil', 'Cerrar sesión'];
-
-const fetchUserData = async () => {
-  const response = await fetch('/api/user');
-  if (!response.ok) {
-    throw new Error('Error fetching data');
-  }
-  return response.json();
-};
-
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
+  const pages = ['Dashboard', 'Clientes', 'Reglas de acumulación'];
+  const settings = ['Editar perfil', 'Cerrar sesión'];
+
+  const fetchUserData = async () => {
+    const response = await fetch('/api/user');
+    if (!response.ok) {
+      throw new Error('Error fetching data');
+    }
+    return response.json();
+  };
+
   const { isLoading, error, data } = useQuery('user', fetchUserData);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
