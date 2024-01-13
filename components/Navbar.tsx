@@ -1,5 +1,4 @@
-import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, MenuItem, Tooltip, Grid } from '@mui/material';
-import * as React from 'react';
+import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, MenuItem, Tooltip } from '@mui/material';
 import { useState } from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LogoutIcon from '@mui/icons-material/Logout';
@@ -39,9 +38,9 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar color="secondary">
+    <AppBar color="info">
       <Container>
-        <Toolbar>
+        <Toolbar className='container-1'>
           {/* Phone responsive */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none', lg: 'none' } }}>
             <IconButton
@@ -79,46 +78,33 @@ const Navbar = () => {
               ))}
             </Menu>
           </Box>
-
-          {/* Web responsive */}
-          <Box sx={{ display: { xs: 'none', md: 'flex', lg: 'flex' }, marginLeft: 33 }}>
-            <Grid container spacing={1}>
-              <Grid item lg={'auto'}>
-                <Button
-                  variant="contained"
-                  key={1}
-                  onClick={handleCloseNavMenu}
-                  sx={{ background: '#644BBA', color: '#ffffff', borderRadius: 5 }}
-                >
-                  Dashboard
-                </Button>
-              </Grid>
-
-              <Grid item lg={'auto'}>
-                <Button
-                  variant="contained"
-                  key={2}
-                  onClick={handleCloseNavMenu}
-                  sx={{ background: '#644BBA', color: '#ffffff', borderRadius: 5 }}
-                >
-                  Clientes
-                </Button>
-              </Grid>
-
-              <Grid item lg={'auto'}>
-                <Button
-                  variant="contained"
-                  key={3}
-                  onClick={handleCloseNavMenu}
-                  sx={{ background: '#644BBA', color: '#ffffff', borderRadius: 5 }}
-                >
-                  Reglas de acumulación
-                </Button>
-              </Grid>
-            </Grid>
+          <Box className='header-box1'>
           </Box>
-          <Typography sx={{ color: '#000000', marginLeft: 33 }}>{data?.name}</Typography>
-          <Box>
+          <Box className='header-box2'>
+            <Button
+              className='MuiButtonNav'
+              key={1}
+              onClick={handleCloseNavMenu}
+            >
+              Dashboard
+            </Button>
+            <Button
+              className='MuiButtonNav'
+              key={2}
+              onClick={handleCloseNavMenu}
+            >
+              Clientes
+            </Button>
+            <Button
+              className='MuiButtonNav2'
+              key={3}
+              onClick={handleCloseNavMenu}
+            >
+              Reglas de acumulación
+            </Button>
+          </Box>
+          <Box className='header-box3'>
+            <Typography className='MuiUserName'>{data?.name}</Typography>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <KeyboardArrowDownIcon />

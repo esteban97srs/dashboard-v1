@@ -6,8 +6,10 @@ const theme = createTheme({
       main:'#644BBA'
     },
     secondary: {
-        main: '#ffffff'
-    }
+      main: '#E7DFF8'
+    },
+    info:{
+      main:'#FDFAFE'}
   },
   components: {
     // Name of the component

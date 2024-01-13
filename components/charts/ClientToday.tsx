@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import ToggleButton from '@mui/material/ToggleButton';
 import { Typography } from '@mui/material';
-import MuiDataGrid from '../MuiDataGrid';
+import TodayGrid from '../grid/TodayGrid';
 
 const ClientToday = () => {
 
@@ -77,7 +77,7 @@ const ClientToday = () => {
             ))}
           </ToggleButtonGroup>
           <div className='d-flex j-center'>
-            <MuiDataGrid/>
+            <TodayGrid/>
           </div>
         </div>
       }

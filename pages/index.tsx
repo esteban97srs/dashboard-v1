@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
+import ClientToday from '../components/charts/ClientToday';
 
 const Home: NextPage = () => {
   return (
-    <div style={{backgroundColor:'#000000'}}>
-    </div>
+    <ClientToday />
   );
 };
 

@@ -2,13 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto';
   font-size: 14px;
   background-color: #FdFAFE;
-}
-
-mui-btn {
-  font-size: 14px;
+  font-family:'roboto';
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .flex {
@@ -90,4 +88,136 @@ mui-btn {
   border-radius: 20px;
   padding: 10px, 20px, 20px, 20px;
   gap: 8px;
+}
+
+.mui-chip-hover:hover {
+  background: #E7DFF8;
+}
+
+.MuiChip-root {
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.MuiButton {
+  border-radius: 8px;
+  border-color: #79757F;
+  color: #48454E;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform:inherit;
+}
+
+.MuiButton:hover {
+  background: #E7DFF8;
+  border-color: #E7DFF8;
+  color: #1D192B;
+}
+
+.MuiButtonNav {
+  color: #644BBA;
+  border-radius: 100px;
+  text-transform:inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  width: 117px;
+  height: 40px;
+  gap: 8px;
+}
+
+.MuiButtonNav2 {
+  color: #644BBA;
+  border-radius: 100px;
+  text-transform:inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  width: 172px;
+  height: 40px;
+  gap: 8px;
+}
+
+.MuiButtonNav2:hover {
+  background: #644BBA;
+  color: #ffffff;
+}
+
+.MuiButtonNav:hover {
+  background: #644BBA;
+  color: #ffffff;
+}
+
+.MuiUserName {
+  color: #1C1B1E;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.MuiAppBar {
+  height: 61px;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-box1 {
+  width: 323px;
+  display: flex;
+  justify-content: center;
+  padding-left: 61;
+}
+
+.header-box2 {
+  display: flex;
+  width: 415px;
+  justify-content: center;
+}
+
+.header-box3 {
+  display: flex;
+  justify-content: flex-end;
+  width: 323px;
+  padding-right: 61px;
+}
+
+.chip-icon-done {
+  border-color: #79757F;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.chip-icon-done:hover {
+  border-color: #E7DFF8;
+  border-width: 1px;
+}
+
+.switch-pulso {
+  display: flex;
+  border: 1.5px solid #644BBA;
+  border-radius: 100px;
+  padding: 4px;
+  border-radius: 100px;
+  width: 205px;
+}
+
+.chip-pulso {
+  border-radius: 100px;
+  border-color: none;
+  margin-right: 10px;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.chip-pulso:hover {
+  border-color: none;
+  background:  #644BBA;
+  color: #ffffff;
 }
