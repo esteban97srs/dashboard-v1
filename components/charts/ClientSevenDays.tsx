@@ -19,8 +19,6 @@ const ClientSevenDays = () => {
     },
   }
 
-  interface SalesArray extends Array<SaleData> {
-  }
 
   const fetchSalesData = async () => {
     const response = await fetch('/api/clientSevenDays');
@@ -36,7 +34,7 @@ const ClientSevenDays = () => {
     {label: 'Compraron', color :'#358DEB'},
     {label: 'No compraron', color :'#B9E8C9'}
   ];
-  const { isLoading , error, data} : SalesArray = useQuery('clientSevenDays', fetchSalesData);
+  const { isLoading , data }  = useQuery('clientSevenDays', fetchSalesData);
   const [ color ] = useState('');
 
   return (

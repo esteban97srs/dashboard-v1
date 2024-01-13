@@ -20,7 +20,7 @@ const Navbar = () => {
     return response.json();
   };
 
-  const { isLoading, error, data } = useQuery('user', fetchUserData);
+  const { data } = useQuery('user', fetchUserData);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
