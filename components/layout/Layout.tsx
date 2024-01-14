@@ -9,7 +9,10 @@ import DoneIcon from '@mui/icons-material/Done';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import StarRoundedIcon from '@mui/icons-material/StarRounded';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
+import { IconButton } from '@mui/material';
+
 type DashboardLayoutProps = {
   children: React.ReactNode,
 };
@@ -17,10 +20,10 @@ type DashboardLayoutProps = {
 export default function Layout({ children }: DashboardLayoutProps) {
   const router                                  = useRouter();
   const [filterChipFirst, setFilterChipFirst]   = useState('today');
-  const [filterChipSecond, setFilterChipSecond] = useState('');
+  const [filterChipSecond, setFilterChipSecond] = useState('all');
   const [filterChipThird, setFilterChipThird]   = useState('client');
   const [filterChipFourth, setFilterChipFourth] = useState('');
-  const [pulsoSelected, setPulsoSelected]       = useState('');
+  const [pulsoSelected, setPulsoSelected]       = useState('grafico');
 
   return (
     <>
@@ -123,17 +126,17 @@ export default function Layout({ children }: DashboardLayoutProps) {
         </div>
         <aside className='aside'>
           <div className='switch-pulso'>
-            <Chip className='chip-pulso' icon={<BarChartOutlinedIcon  sx={{ width:'25px', height:'25px' }} />} color={pulsoSelected === 'grafico' ? 'primary': 'info'} label="Gráfico" onClick={() => {
+            <Chip className='chip-pulso' icon={<BarChartOutlinedIcon color='primary'  sx={{width:'25px', height:'25px' }} />} color={pulsoSelected === 'grafico' ? 'primary': 'info'} label="Gráfico" onClick={() => {
               setPulsoSelected('grafico');
             }}/>
-            <Chip className='chip-pulso' icon={<StarRoundedIcon sx={{ width:'25px', height:'25px' }} />} color={pulsoSelected === 'pulso' ? 'primary': 'info'} label="Pulso" onClick={() => {
+            <Chip className='chip-pulso' icon={<StarRoundedIcon color='primary' sx={{ width:'25px', height:'25px' }} />} color={pulsoSelected === 'pulso' ? 'primary': 'info'} label="Pulso" onClick={() => {
               setPulsoSelected('pulso');
             }}/>
-            {/* <div>
+            <div>
               <IconButton onClick={()=>{}} sx={{ p: 0 }}>
                 <KeyboardArrowDownIcon />
               </IconButton>
-            </div> */}
+            </div>
           </div>
           <Card />
           <Card />

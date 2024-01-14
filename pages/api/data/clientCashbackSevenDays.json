@@ -1,0 +1,72 @@
+[
+    {
+      "newClient": {
+        "day": "Lunes",
+        "value": 2124
+      },
+      "bought": {
+        "day": "Lunes",
+        "value": 400
+      }
+    },
+    {
+      "newClient": {
+        "day": "Martes",
+        "value": 900
+      },
+      "bought": {
+        "day": "Martes",
+        "value": 1450
+      }
+    },
+    {
+      "newClient": {
+        "day": "Miercoles",
+        "value": 1123
+      },
+      "bought": {
+        "day": "Miercoles",
+        "value": 1700
+      }
+    },
+    {
+      "newClient": {
+        "day": "Jueves",
+        "value": 1212
+      },
+      "bought": {
+        "day": "Jueves",
+        "value": 1850
+      }
+    },
+    {
+      "newClient": {
+        "day": "Viernes",
+        "value": 200
+      },
+      "bought": {
+        "day": "Viernes",
+        "value": 1850
+      }
+    },
+    {
+      "newClient": {
+        "day": "Sabado",
+        "value": 50
+      },
+      "bought": {
+        "day": "Sabado",
+        "value": 1200
+      }
+    },
+    {
+      "newClient": {
+        "day": "Domingo",
+        "value": 250
+      },
+      "bought": {
+        "day": "Domingo",
+        "value": 1000
+      }
+    }
+  ]

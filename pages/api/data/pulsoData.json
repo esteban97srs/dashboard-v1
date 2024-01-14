@@ -1,0 +1,32 @@
+[
+  {
+      "newClient": {
+      "first": "Septiembre",
+      "value": "50.000"
+      },
+      "bought": {
+      "day": "Septiembre",
+      "value": "80.000"
+      }
+  },
+  {
+      "newClient": {
+      "first": "Octubre",
+      "value": "100.000"
+      },
+      "bought": {
+      "day": "Octubre",
+      "value": "500.000"
+      }
+  },
+  {
+      "newClient": {
+      "first": "Noviembre",
+      "value": "100.000"
+      },
+      "bought": {
+      "day": "Noviembre",
+      "value": "350.000"
+      }
+  }
+]

@@ -32,8 +32,7 @@ const SevenDaysGrid = () => {
     createData('10', '10', '17.221', '45.153'),
     createData('50', '15', '16.632', '21.122'),
     createData('80', '22', '11.755', '21.792'),
-    createData('80', '22', '8.125', '63.555'),
-    createData('80', '22', '9.545', '67.221')
+    createData('80', '22', '8.125', '63.555')
   ];
 
   const rowsTableSecond = [
