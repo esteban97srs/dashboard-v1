@@ -1,22 +1,22 @@
 [
   {
       "newClient": {
-      "day": "2022",
-      "value": "5M"
+      "hour": "2022",
+      "value": "5000000"
       },
       "bought": {
-      "day": "2023",
-      "value": "6M"
+      "hour": "2022",
+      "value": "6000000"
       }
   },
   {
       "newClient": {
-      "day": "2022",
-      "value": "5M"
+      "hour": "2023",
+      "value": "5000000"
       },
       "bought": {
-      "day": "2023",
-      "value": "6M"
+      "hour": "2023",
+      "value": "6000000"
       }
   }
 ]

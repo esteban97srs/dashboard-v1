@@ -4,12 +4,19 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LogoutIcon from '@mui/icons-material/Logout';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useQuery } from 'react-query';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
-  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
-  const pages = ['Dashboard', 'Clientes', 'Reglas de acumulación'];
-  const settings = ['Editar perfil', 'Cerrar sesión'];
+
+  const [anchorElNav, setAnchorElNav]         = useState<null | HTMLElement>(null);
+  const [anchorElUser, setAnchorElUser]       = useState<null | HTMLElement>(null);
+  const [buttonNavActive, setButtonNavActive] = useState('dashboard');
+  const [dashboardColor, setDashboardColor]   = useState('#ffffff');
+  const [clientColor, setClientColor]         = useState('#644BBA');
+  const [rulesColor, setRulesColor]           = useState('#644BBA');
+  const pages     = ['Dashboard', 'Clientes', 'Reglas de acumulación'];
+  const settings  = ['Editar perfil', 'Cerrar sesión'];
+  const router    = useRouter();
 
   const fetchUserData = async () => {
     const response = await fetch('/api/user');
@@ -83,22 +90,49 @@ const Navbar = () => {
           <Box className='header-box2'>
             <Button
               className='MuiButtonNav'
+              variant={buttonNavActive === 'dashboard'  ? 'contained' : 'outlined'}
+              color={buttonNavActive === 'dashboard' ? 'primary': 'info'}
+              sx={{color:dashboardColor}}
               key={1}
-              onClick={handleCloseNavMenu}
+              onClick={() =>{
+                setButtonNavActive('dashboard');
+                setDashboardColor('#ffffff');
+                setClientColor('#644BBA');
+                setRulesColor('#644BBA');
+                router.push('/');
+              }}
             >
               Dashboard
             </Button>
             <Button
               className='MuiButtonNav'
+              variant={buttonNavActive === 'providers'  ? 'contained' : 'outlined'}
+              color={buttonNavActive === 'providers' ? 'primary': 'info'}
+              sx={{color: clientColor}}
               key={2}
-              onClick={handleCloseNavMenu}
+              onClick={() =>{
+                setButtonNavActive('providers');
+                setDashboardColor('#644BBA');
+                setClientColor('#ffffff');
+                setRulesColor('#644BBA');
+                router.push('/');
+              }}
             >
               Clientes
             </Button>
             <Button
               className='MuiButtonNav2'
+              variant={buttonNavActive === 'rules'  ? 'contained' : 'text'}
+              color={buttonNavActive === 'rules' ? 'primary': 'info'}
+              sx={{color: rulesColor}}
               key={3}
-              onClick={handleCloseNavMenu}
+              onClick={() =>{
+                setButtonNavActive('rules');
+                setDashboardColor('#644BBA');
+                setClientColor('#644BBA');
+                setRulesColor('#ffffff');
+                router.push('/');
+              }}
             >
               Reglas de acumulación
             </Button>

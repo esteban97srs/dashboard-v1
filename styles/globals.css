@@ -118,7 +118,6 @@ body {
 }
 
 .MuiButtonNav {
-  color: #644BBA;
   border-radius: 100px;
   text-transform:inherit;
   font-size: 14px;
@@ -130,13 +129,12 @@ body {
 }
 
 .MuiButtonNav2 {
-  color: #644BBA;
   border-radius: 100px;
   text-transform:inherit;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  width: 172px;
+  width: 192px;
   height: 40px;
   gap: 8px;
 }

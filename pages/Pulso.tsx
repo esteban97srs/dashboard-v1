@@ -1,9 +1,9 @@
 import ClientSevenDaysChart from '../components/charts/ClientSevenDays';
 
-const ClientSevenDays = () => {
-  return (
+const Pulso = () => {
+  return(
     <ClientSevenDaysChart />
   );
 };
 
-export default ClientSevenDays;
+export default Pulso;
