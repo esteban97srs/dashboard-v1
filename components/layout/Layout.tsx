@@ -122,17 +122,25 @@ export default function Layout({ children }: DashboardLayoutProps) {
               <div className='d-flex gap-1'>
                 <Chip className='chip-icon-done mui-chip-hover' icon={filterChipThird === 'Client' ? <DoneIcon /> : <></> } color={filterChipThird === 'Client' ? 'secondary': 'info'} label="Clientes" onClick={() => {
                   setFilterChipThird('Client');
+                  router.push('/TodayClient');
+
                 }}/>
                 <Chip className='chip-icon-done mui-chip-hover' icon={filterChipThird === 'Transactions' ? <DoneIcon /> : <></> } color={filterChipThird === 'Transactions' ? 'secondary': 'info'} label="Transacciones" onClick={() => {
                   setFilterChipThird('Transactions');
+                  router.push('/TransactionsMoneySevenDays');
+
                 }}/>
               </div>
               <div className='d-flex gap-1'>
                 <Chip className='chip-icon-done mui-chip-hover' icon={filterChipFourth === 'Money' ? <DoneIcon /> : <></> } color={filterChipFourth === 'Money' ? 'secondary': 'info'} label="Dinero" onClick={() => {
                   setFilterChipFourth('Money');
+                  router.push('/ClientMoneySevenDays');
+
                 }}/>
                 <Chip className='chip-icon-done mui-chip-hover' icon={filterChipFourth === 'Cashback' ? <DoneIcon /> : <></> } color={filterChipFourth === 'Cashback' ? 'secondary': 'info'} label="Cashback" onClick={() => {
                   setFilterChipFourth('Cashback');
+                  router.push('/ClientCashbackSevenDays');
+
                 }}/>
               </div>
             </div>
